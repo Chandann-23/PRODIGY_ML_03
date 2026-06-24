@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+
+# Local env files (holds private API keys and Mongo URIs)
+.env
+.env.local
+.env.*.local
+
+# Production build artifacts
+dist/
+build/
+
+# Local mock database storage
+database_fallback.json
+
+# IDE / Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "name": "svm-mlops-platform",
+  "version": "1.0.0",
+  "description": "MLOps SVM Platform for Cat and Dog Classification in MERN Stack",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
