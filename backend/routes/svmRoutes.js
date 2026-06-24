@@ -358,7 +358,7 @@ router.get('/model/active', async (req, res) => {
   try {
     const model = await findActiveModel();
     if (!model) {
-      return res.status(404).json({ message: 'No active model found' });
+      return res.json(null);
     }
     
     // Format to match Mongoose select output

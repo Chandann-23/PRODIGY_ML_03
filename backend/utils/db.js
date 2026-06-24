@@ -1,10 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import Sample from '../models/Sample.js';
 import SVMModel from '../models/SVMModel.js';
 
 let isMongoConnected = false;
-const fallbackFile = path.resolve('database_fallback.json');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const fallbackFile = path.resolve(__dirname, '../database_fallback.json');
 
 // Local in-memory store in case of fallback
 let localData = {
